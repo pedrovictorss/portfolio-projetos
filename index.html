@@ -1,0 +1,614 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>DataFolio - Alex Morgan | Data Analyst Portfolio</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              900: '#070b19',
+              800: '#0b132b',
+              700: '#1c2541',
+            },
+            accent: {
+              cyan: '#00d2ff',
+              blue: '#3a86ff',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- FontAwesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style data-purpose="custom-animations-and-glows">
+    .glow-effect {
+      box-shadow: 0 0 25px -5px rgba(0, 210, 255, 0.4);
+    }
+    .glow-effect-subtle {
+      box-shadow: 0 0 15px -3px rgba(0, 210, 255, 0.15);
+    }
+    .glow-text {
+      text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070b19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1c2541;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3a86ff;
+    }
+  </style>
+</head>
+<body class="bg-[#070b19] text-gray-100 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#070b19]/80 backdrop-blur-md border-b border-gray-800/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"><a href="#home" class="flex items-center space-x-2 text-xl font-bold tracking-tight text-white group"><span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">P</span><span class="text-white group-hover:text-cyan-400 transition-colors">Port<span class="text-cyan-400">fólio</span></span></a>
+<!-- Brand Logo -->
+<!-- This container holds the logo icon and site title -->
+
+<!-- Navigation Links -->
+<!-- Desktop menu links for smooth in-page navigation -->
+<nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+<a class="text-cyan-400 hover:text-cyan-300 transition-colors" href="#home">Home</a>
+<a class="hover:text-cyan-400 transition-colors" href="#about">About</a>
+<a class="hover:text-cyan-400 transition-colors" href="#projects">Projects</a>
+<a class="hover:text-cyan-400 transition-colors" href="#skills">Skills</a>
+<a class="hover:text-cyan-400 transition-colors" href="#experience">Experience</a>
+<a class="hover:text-cyan-400 transition-colors" href="#curriculum">Resume</a>
+<a class="hover:text-cyan-400 transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- CTA Button -->
+<!-- Call to action button linking to contact form -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 glow-effect hover:opacity-90 transition-opacity" href="#contact">
+          Let's Talk <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+<!-- Mobile menu toggle button -->
+<button class="md:hidden text-gray-300 hover:text-white focus:outline-none" id="menu-toggle">
+<i class="fa-solid fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden bg-[#0b132b] border-b border-gray-800 px-4 pt-2 pb-6 space-y-3" id="mobile-menu">
+<a class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-[#1c2541]" href="#home">Home</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#about">About</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#projects">Projects</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#skills">Skills</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#experience">Experience</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#curriculum">Resume</a>
+<a class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1c2541]" href="#contact">Contact</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden" id="home">
+<!-- Background glow decorative elements -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<!-- Profile Avatar -->
+<!-- Container for analyst avatar with glowing gradient border matching reference -->
+<div class="mb-4 flex justify-center"><div class="p-1 rounded-full bg-gradient-to-b from-cyan-500 to-blue-600 glow-effect"><div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden bg-[#0b132b]"><img alt="Alex Morgan - Data Analyst" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXXg00CpbTRezytpvy4p4sx5hdgokDTVrkKvkbadUZz7jfRiXhLzCA010EWTOobEuR7wmooYRvOP-K_LfUvWb-w2Iqx1zT6jTNjJA9rwb8ihxbrI4x5KOBX-TYHmtdxO2VvPlT4cW_xO7mJyx-2BjO6WkLesFFE_P3EovJ1fLcxO-zFTxKrjF1rfHYY0LR6wENHijllZrVyzCEPPljzs3HRW0yKK5I91JCc8RkLlgEWCuQ-EXoy66t7uwNPuIkjuD53IgsTGlsXjsE0A"></div></div></div>
+<!-- Availability Badge -->
+<div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#1c2541]/80 border border-cyan-500/30 text-cyan-400 text-xs md:text-sm font-medium mb-8">
+<span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+<span class="">Disponível para novos projetos</span>
+</div>
+<!-- Main Hero Heading -->
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">Olá, eu sou Pedro Souza</h1>
+<!-- Hero Description -->
+<p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-400 mb-10 leading-relaxed">Seja muito bem-vindo(a) ao meu Portfólio com Projetos de dados para diferentes setores, desenvolvidos com ferramentas e tecnologias modernas.<div><br></div><div class="">Aqui você encontra minhas experiências e projetos de dados que mostram minha experiência e domínio em construir soluções de mercado para diversas áreas e setores, sempre com o objetivo de gerar valor&nbsp;</div></p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 glow-effect hover:opacity-90 transition-all text-center" href="#projects">Ver Projetos</a>
+<a class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-gray-200 bg-[#1c2541] border border-gray-700 hover:border-cyan-500/50 transition-all text-center" href="#contact">Currículo</a>
+</div>
+<!-- Social Media / Professional Links Bar -->
+
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: StatsBar -->
+<!-- Metrics and data indicators showcase -->
+
+<!-- END: StatsBar -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 relative" id="about"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm uppercase tracking-wider"><i class="fa-solid fa-layer-group text-xs"></i></div><h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Sobre Mim</h2><p class="text-gray-400">Conheça um pouco mais sobre minha trajetória, experiências e foco profissional.</p></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"><div class="lg:col-span-5 relative"><div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-30 blur-lg pointer-events-none"></div><div class="relative rounded-3xl bg-[#0b132b] border border-gray-800 p-8 shadow-2xl space-y-8"><div class="flex flex-col items-center text-center"><div class="mb-4 inline-block p-1 rounded-full bg-gradient-to-b from-cyan-500 to-blue-600 glow-effect"><div class="w-28 h-28 rounded-full overflow-hidden bg-[#070b19]"><img alt="Alex Morgan - Data Analyst" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8nPZF0171OW8AhQiaK9JSwQ6nivHQLcIl5__YcSZDej4jnn-4RK2ecAlSjFWNMak-DdnKKpYUiiA7Vjif9ljnHMuakC3GfgTJ_DsFXQUp5LEviKA4EWoDmM58ydDzFm1iQZS_LtmlMya_xTsA75Ed7bCN7zPBUiEvEbtUu-4ND4UX0bXitmbtnXrdszvmHJ0-tDxSG4GrQJ-vkxtVGCSrZIHCvxkGc2HNBO-qqOOx5scUM1OLQ46Vx7uZQKwtj4fm4BeOaMcmZNlzxA"></div></div><h3 class="text-2xl font-bold text-white mb-1">Pedro Souza</h3><p class="text-cyan-400 font-medium text-sm">Analista de Dados</p></div><div class="space-y-4"><div class="flex items-center space-x-4 p-4 rounded-2xl bg-[#1c2541]/60 border border-gray-800 text-gray-300"><span class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400"><i class="fa-solid fa-envelope"></i></span><span class="text-sm font-medium">pedrovictor.eq@gmail.com</span></div><div class="flex items-center space-x-4 p-4 rounded-2xl bg-[#1c2541]/60 border border-gray-800 text-gray-300"><span class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400"><i class="fa-solid fa-phone"></i></span><span class="text-sm font-medium">(75) 98153-2133</span></div><div class="flex items-center space-x-4 p-4 rounded-2xl bg-[#1c2541]/60 border border-gray-800 text-gray-300"><span class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400"><i class="fa-solid fa-location-dot"></i></span><span class="text-sm font-medium">Salvador, BA</span></div></div></div></div><div class="lg:col-span-7 space-y-8"><h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-tight">Apaixonado por Criar Impacto Orientado por Dados</h2><p class="text-gray-400 leading-relaxed text-base sm:text-lg">Sou Engenheiro Químico de formação e profissional com atuação no setor bancário.&nbsp;Minha paixão por transformar volumes de dados em direcionamentos estratégicos me levou à transição de carreira para a área de dados.</p><div class="">Minha bagagem técnica abrange <b data-path-to-node="1" data-index-in-node="30">Python, SQL, Power BI, Excel e Estatística</b>, permitindo a construção de soluções ponta a ponta. Tenho experiência prática nas quatro camadas da análise de dados: Descritiva, Diagnóstica, Preditiva e Prescritiva.</div><p></p><p class="text-gray-400 leading-relaxed text-base">Busco oportunidades como <b data-path-to-node="3" data-index-in-node="25">Analista de Dados</b> ou <b data-path-to-node="3" data-index-in-node="46">Analista de BI</b>, unindo o rigor lógico da engenharia, a vivência de negócios do segmento financeiro e a capacidade técnica em <i data-path-to-node="3" data-index-in-node="171">analytics</i> para gerar impacto real.</p></div></div></div></section>
+<!-- END: AboutSection -->
+<!-- BEGIN: ProjectsSection -->
+<section class="py-24 bg-[#0b132b]/30 border-y border-gray-800/60" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header matching reference style with underline accent -->
+<div class="mb-14">
+<div class="flex items-center space-x-4 mb-3">
+<h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Ferramentas e Tecnologia</h2>
+<span class="w-16 h-1 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 inline-block"></span>
+</div>
+
+</div>
+<!-- 3-Column, 2-Row Grid of 6 Cards matching reference structure and dark portfolio theme -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Digital Solutions -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-layer-group"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Digital Solutions</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+<!-- Card 2: Secure Systems -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Secure Systems</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+<!-- Card 3: Growth Strategy -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Growth Strategy</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+<!-- Card 4: AI Integration -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-microchip"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">AI Integration</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+<!-- Card 5: Cloud Services -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-cloud-arrow-up"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cloud Services</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+<!-- Card 6: Process Automation -->
+<div class="group rounded-2xl bg-[#0b132b] border border-gray-800 p-8 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
+<i class="fa-solid fa-gear"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Process Automation</h3>
+<p class="text-sm text-gray-400 leading-relaxed mb-6">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+</div>
+<a class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#contact">
+<span class="">Learn More</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+</div>
+</div>
+</div>
+</section><section class="py-24" id="skills"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm uppercase tracking-wider"><i class="fa-solid fa-screwdriver-wrench text-xs"></i><span class="">Expertise</span></div><h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Skills &amp; Tools</h2><p class="text-gray-400">The core technologies and data stack I utilize daily to solve complex analytics challenges.</p></div><div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"><div class="p-6 rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 transition-all text-center group"><div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-2xl group-hover:scale-110 transition-transform"><i class="fa-brands fa-python"></i></div><h3 class="font-bold text-white mb-1">Python</h3><p class="text-xs text-gray-400">Pandas, NumPy, Scikit-Learn</p></div><div class="p-6 rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 transition-all text-center group"><div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-database"></i></div><h3 class="font-bold text-white mb-1">SQL &amp; Databases</h3><p class="text-xs text-gray-400">PostgreSQL, MySQL, T-SQL</p></div><div class="p-6 rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 transition-all text-center group"><div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-chart-pie"></i></div><h3 class="font-bold text-white mb-1">Power BI</h3><p class="text-xs text-gray-400">DAX, Power Query, Service</p></div><div class="p-6 rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 transition-all text-center group"><div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-2xl group-hover:scale-110 transition-transform"><i class="fa-brands fa-git-alt"></i></div><h3 class="font-bold text-white mb-1">Git &amp; Version Control</h3><p class="text-xs text-gray-400">GitHub, CI/CD Workflows</p></div></div></div></section><section class="py-24 bg-[#0b132b]/30 border-y border-gray-800/60" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Section Header -->
+  <div class="text-center max-w-3xl mx-auto mb-10 space-y-4">
+    <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm uppercase tracking-wider">
+      <i class="fa-solid fa-folder-open text-xs"></i>
+      <span class="">Portfolio</span>
+    </div>
+    <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Projetos de Destaque</h2>
+    <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam
+    </p>
+  </div>
+
+  <!-- Category Filter Pills -->
+  <div class="flex flex-wrap items-center justify-center gap-2.5 mb-14">
+    <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-cyan-500/20 transition-all">
+      Todos
+    </button>
+    <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium text-gray-300 bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 hover:text-cyan-400 transition-all">
+      Estratégia
+    </button>
+    <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium text-gray-300 bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 hover:text-cyan-400 transition-all">
+      Finanças
+    </button>
+    <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium text-gray-300 bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 hover:text-cyan-400 transition-all">
+      Operações
+    </button>
+    <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium text-gray-300 bg-[#0b132b] border border-gray-800 hover:border-cyan-500/40 hover:text-cyan-400 transition-all">
+      Tecnologia
+    </button>
+  </div>
+
+  <!-- 6-Project Grid (3 columns x 2 rows) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1: Business Growth Strategy -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Business Growth Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Business Growth Strategy</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Strategic Planning</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Strategy</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Consulting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Financial Restructuring -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Financial Restructuring" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Financial Restructuring</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Financial Advisory</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Finance</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Investment</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Supply Chain Optimization -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Supply Chain Optimization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Supply Chain Optimization</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Operations Management</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Operations</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Logistics</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Digital Transformation -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Digital Transformation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Digital Transformation</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Technology Consulting</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Technology</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Innovation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Market Expansion -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Market Expansion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Market Expansion</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Strategic Planning</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Strategy</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Growth</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6: Investment Strategy -->
+    <div class="group rounded-2xl bg-[#0b132b] border border-gray-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col overflow-hidden">
+      <div class="p-3 pb-0">
+        <div class="w-full h-52 rounded-xl overflow-hidden bg-[#1c2541]/40 relative">
+          <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Investment Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Investment Strategy</h3>
+          <p class="text-xs sm:text-sm text-gray-400 mb-4 font-medium">Financial Advisory</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-cyan-400 border border-cyan-500/20 font-medium">Finance</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-[#1c2541] text-gray-300 font-medium">Investment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: SkillsSection -->
+
+<!-- BEGIN: ExperienceSection -->
+<!-- BEGIN: ExperienceSection -->
+<section class="py-24 bg-[#0b132b]/30 border-y border-gray-800/60" id="experience">
+
+</section>
+<!-- BEGIN: CurriculumSection -->
+<!-- BEGIN: CurriculumSection -->
+<section class="py-24 relative" id="curriculum">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><div class="flex items-center justify-center space-x-3 text-gray-400 font-medium"><span class="w-8 h-0.5 bg-gray-500 inline-block"></span><h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Currículo</h2><span class="w-8 h-0.5 bg-gray-500 inline-block"></span></div></div>
+<!-- Layout Grid matching reference style -->
+<div class="max-w-4xl mx-auto space-y-8">
+  <!-- Experiência Profissional Card -->
+  <div class="p-8 sm:p-10 rounded-2xl bg-[#0b132b] border border-gray-800 shadow-2xl space-y-8 hover:border-cyan-500/30 transition-all">
+    <div class="flex items-center space-x-3 border-b border-gray-800 pb-5">
+      <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-white tracking-tight">Experiência Profissional</h3>
+      </div>
+    </div>
+    <div class="space-y-8">
+      <!-- Item 1: Técnico Bancário -->
+      <div class="space-y-3 relative pl-6 border-l-2 border-cyan-500/50">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div>
+            <h4 class="text-lg font-bold text-white">Técnico Bancário</h4>
+            <p class="text-cyan-400 text-xs font-semibold flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-building text-[11px]"></i> CAIXA ECONÔMICA FEDERAL
+            </p>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 bg-[#1c2541] border border-cyan-500/20 px-3 py-1 rounded-full w-fit font-medium">2025 - Presente</span>
+        </div>
+        <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mt-2 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Análise de Dados de Negócio &amp; Operações:</b> Mapeamento de perfis de clientes e identificação de oportunidades para prospecção, oferta e gestão de carteira em produtos de Investimentos, Seguridade e Crédito.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Automação de Processos &amp; Analytics:</b> Aplicação do <b class="text-white">Excel avançado</b> e <b class="text-white">Power BI</b> para estruturação de relatórios operacionais, acompanhamento de KPIs e apoio à tomada de decisão no ambiente de agência.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Uso de IA Operacional:</b> Utilização contínua do <b class="text-white">Copilot</b> no dia a dia para otimização de fluxos de trabalho, geração de insights rápidos e automação de rotinas operacionais e de atendimento.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Gestão de Programas Sociais &amp; Processamento Operacional:</b> Atendimento presencial e digital de alto volume para liberação, consulta e validação de benefícios sociais.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Item 2: Gerente de RH -->
+      <div class="space-y-3 relative pl-6 border-l-2 border-gray-700/80 pt-2">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div>
+            <h4 class="text-lg font-bold text-white">Gerente de Recursos Humanos</h4>
+            <p class="text-cyan-400 text-xs font-semibold flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-building text-[11px]"></i> A M ABS Transportes
+            </p>
+          </div>
+          <span class="text-xs font-mono text-gray-300 bg-[#1c2541] border border-gray-700 px-3 py-1 rounded-full w-fit font-medium">2023 - 2024</span>
+        </div>
+        <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mt-2 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Gestão de Pessoas e Operações:</b> Liderança do ciclo completo de RH, atuando como preposto oficial da empresa.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">People Analytics &amp; Gestão Orçamentária:</b> Modelagem em planilhas avançadas para consolidação, cálculo e previsão orçamentária de custos operacionais.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Análise de Indicadores de RH (KPIs):</b> Monitoramento e tratamento de dados operacionais referentes a absenteísmo, frequência e turnover para report de métricas e suporte à tomada de decisão da diretoria.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400 mt-1 text-xs">•</span>
+            <span class=""><b class="text-white">Mapeamento de Processos &amp; Compras:</b> Levantamento de dados, cotação e análise custo-benefício para aquisição de benefícios corporativos, EPIs e insumos, visando a eficiência financeira nos contratos.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educação Card -->
+  <div class="p-8 sm:p-10 rounded-2xl bg-[#0b132b] border border-gray-800 shadow-2xl space-y-8 hover:border-cyan-500/30 transition-all">
+    <div class="flex items-center space-x-3 border-b border-gray-800 pb-5">
+      <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-white tracking-tight">Educação</h3>
+      </div>
+    </div>
+    <div class="space-y-6">
+      <!-- Edu 1 -->
+      <div class="space-y-2 relative pl-6 border-l-2 border-cyan-500/50">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div>
+            <h4 class="text-lg font-bold text-white">Análise de Dados e Inteligência Artificial</h4>
+            <p class="text-cyan-400 text-xs font-semibold flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-graduation-cap text-[11px]"></i> Comunidade DS
+            </p>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 bg-[#1c2541] border border-cyan-500/20 px-3 py-1 rounded-full w-fit font-medium">2024 - 2026</span>
+        </div>
+      </div>
+      <!-- Edu 2 -->
+      <div class="space-y-2 relative pl-6 border-l-2 border-gray-700/80 pt-2">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div>
+            <h4 class="text-lg font-bold text-white">Bacharelado em Engenharia Química</h4>
+            <p class="text-cyan-400 text-xs font-semibold flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-graduation-cap text-[11px]"></i> Universidade Federal de Campina Grande
+            </p>
+          </div>
+          <span class="text-xs font-mono text-gray-300 bg-[#1c2541] border border-gray-700 px-3 py-1 rounded-full w-fit font-medium">2013 - 2018</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- BEGIN: ServicesSection -->
+<!-- END: ServicesSection -->
+
+<!-- END: ServicesSection -->
+<!-- BEGIN: ContactSection -->
+<section class="py-24 relative overflow-hidden" id="contact">
+<!-- Glow decoration -->
+<div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+<div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm uppercase tracking-wider">
+<i class="fa-solid fa-paper-plane text-xs"></i>
+<span class="">Get in Touch</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Discuss Your Data Needs</h2>
+<p class="text-gray-400">Have a project in mind or looking for a dedicated data analyst? Send me a message below.</p>
+</div>
+<!-- Contact Form Container -->
+<div class="rounded-3xl bg-[#0b132b] border border-gray-800 p-8 sm:p-10 shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Your Name</label>
+<input class="w-full bg-[#1c2541]/60 border border-gray-700/80 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm" placeholder="John Doe" type="text">
+</div>
+<div>
+<label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Email Address</label>
+<input class="w-full bg-[#1c2541]/60 border border-gray-700/80 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm" placeholder="john@example.com" type="email">
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Subject</label>
+<input class="w-full bg-[#1c2541]/60 border border-gray-700/80 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm" placeholder="Project Inquiry / Job Opportunity" type="text">
+</div>
+<div>
+<label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Message</label>
+<textarea class="w-full bg-[#1c2541]/60 border border-gray-700/80 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm" placeholder="Tell me about your datasets or goals..." rows="5"></textarea>
+</div>
+<button class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-600 glow-effect hover:opacity-90 transition-all text-center" type="submit">
+              Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#050814] border-t border-gray-800/80 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+<!-- Footer Brand -->
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-sm">
+          D
+        </div>
+<span class="text-base font-bold tracking-tight text-white">Data<span class="text-cyan-400">Folio</span></span>
+</div>
+<!-- Copyright Notice -->
+<p class="text-xs text-gray-500">
+        © 2026 Alex Morgan. All rights reserved. Designed with sleek tech aesthetics.
+      </p>
+<!-- Footer Social Icons -->
+<div class="flex items-center space-x-4 text-gray-400">
+<a class="hover:text-cyan-400 transition-colors" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+<a class="hover:text-cyan-400 transition-colors" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="hover:text-cyan-400 transition-colors" href="#"><i class="fa-brands fa-github"></i></a>
+<a class="hover:text-cyan-400 transition-colors" href="#"><i class="fa-brands fa-kaggle"></i></a>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: MobileMenuScript -->
+<script data-purpose="mobile-menu-toggle">
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking menu links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+<!-- END: MobileMenuScript -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
